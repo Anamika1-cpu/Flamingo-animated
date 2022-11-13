@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display';
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#back{
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    background-color: #f3f3f3;
+}
+#left{
+    position: relative;
+    overflow: hidden;
+    width: 70%;
+    height: 100%;
+    padding: 30px 40px;
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav a{
+    text-decoration: none;
+    opacity: 0.7;
+    color: black;
+    font-size: 13px;
+
+}
+#nav a:nth-child(2){
+    opacity: 1;
+    font-size: 15px;
+    border-bottom: 2px solid black;
+    padding-bottom: 4px;
+    margin-top: 6px;
+}
+#circle{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url(https://images.unsplash.com/photo-1491147334573-44cbb4602074?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+}
+#smcircle{
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 300px;
+}
+#smcircle img{
+    width: 500px;
+    top: 20%;
+    position: absolute;
+    left: -50%;
+}
+#vsmcircle{
+    position: absolute;
+    top: 50%;
+    right: -3%;
+    transform: translate(0,-50%);
+    border: 5px solid white;
+    width: 140px;
+    height: 140px;
+    background-color: black;
+    border-radius: 50%;
+    background-image: url(https://images.unsplash.com/photo-1530728327726-b504480e42ec?ixlib=rb-1.2.1&auto=format&fit=crop&w=2089&q=80);
+    background-size: cover;
+}
+#vsmcircle i{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+}
+#cart{
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    font-size: 22px;
+}
+#right{
+    width: 30%;
+    height: 100%;
+    padding:35px 40px;
+    background-color: #222;
+    color: white;
+}
+#right input{
+    width: 100%;
+    padding: 12px 32px;
+    border-radius: 100px;
+    font-family:'Product Sans';
+    background-color: #333;
+    outline: none;
+    border:none;
+    color: white;
+}
+#right h4{
+    font-size: 22px;
+    font-weight: 100;
+    margin-top: 40px;
+    opacity: .7;
+}
+#parrotimg{
+    width: 100%;
+    height: 270px;
+    background-color: red;
+    margin-top: 20px;
+    border-radius: 3px;
+    background-image: url(https://images.unsplash.com/photo-1531958532341-b88dc3d33abe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+#right h3{
+    font-size: 27px;
+    font-weight: 300;
+    margin-top: 30px;
+    font-family: 'Product Sans';
+    letter-spacing: 1px;
+}
+.elem{
+    display: flex;
+    width: 100%;
+}
+.elem h3{
+    font-family: "Product-sans";
+    font-weight: 100;
+}
+.elem>h3{
+    font-family: "Product-sans";
+    margin-right: 90px;
+    font-size: 20px !important;
+}
+.elem p{
+    font-family: "Product-sans";
+    opacity: .5;
+    font-weight: 100;
+}
+.elem .dets h3{
+    font-size: 20px !important;
+}
+.elem .dets p{
+    font-family: "Product Sans";
+    opacity: .5;
+    font-weight: 100;
+}
+#left i{
+    cursor: pointer;
+}
